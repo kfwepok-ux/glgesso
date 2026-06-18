@@ -1,0 +1,24 @@
+﻿# Private WordPress backups and exports
+database_structure.sql
+*.sql
+*.rar
+FireShot*.png
+
+# Legacy WordPress/Elementor export kept locally only
+/templates/
+/css/
+/js/
+/images/
+/clientes/
+/logo-dibease/
+
+# Local and system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Vercel local metadata
+.vercel/
+
+# Local render checks
+preview-*.png
