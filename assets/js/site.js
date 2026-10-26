@@ -1,9 +1,18 @@
-// GL Gesso: interações da página e eventos para o GTM (dataLayer).
+// GL Gesso: interações da página e eventos para o GTM (dataLayer) e o GA4 (gtag).
 (function () {
   "use strict";
 
   window.dataLayer = window.dataLayer || [];
-  var push = function (data) { window.dataLayer.push(data); };
+  // O GTM lê o objeto no dataLayer (ex.: conversão do Ads em cta_click);
+  // o GA4 instalado via gtag.js só recebe o que vem por gtag("event").
+  var push = function (data) {
+    window.dataLayer.push(data);
+    if (typeof window.gtag === "function") {
+      var params = {};
+      Object.keys(data).forEach(function (key) { if (key !== "event") params[key] = data[key]; });
+      window.gtag("event", data.event, params);
+    }
+  };
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Cliques nos CTAs: canal (whatsapp, telefone, instagram), posição na página e serviço.
