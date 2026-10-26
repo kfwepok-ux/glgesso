@@ -1,0 +1,109 @@
+// Gera as páginas legais (raiz do site) a partir de src/legal/*.html com o layout comum.
+// Cada arquivo de conteúdo começa com um comentário de metadados:
+// <!-- title: ... | description: ... | updated: ... -->
+import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+
+const WA = "https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento.%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20";
+
+const layout = ({ slug, title, description, updated, body }) => `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MH28D3FW');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js): GA4. Não criar outra tag GA4 no GTM para não duplicar dados. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2X5RRFC76"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P2X5RRFC76');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${title} | GL Gesso</title>
+  <meta name="description" content="${description}" />
+  <link rel="canonical" href="https://www.glgesso.com.br/${slug}" />
+  <meta name="theme-color" content="#0a0e14" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preload" href="/assets/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/site.css?v=20261026b" />
+</head>
+<body class="bg-gl-base text-slate-300 font-sans antialiased">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MH28D3FW"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 100 100"><rect x="15" y="85" width="70" height="4" rx="2"/><rect x="44" y="10" width="4" height="75"/><rect x="28" y="26" width="4" height="59"/><polygon points="18,44 48,22 48,27 20,47"/><polygon points="28,34 44,24 44,85 28,85"/><rect x="48" y="14" width="4" height="71"/><rect x="58" y="14" width="4" height="71"/><polygon points="48,25 58,33 58,36 48,28"/><polygon points="58,36 48,44 48,47 58,39"/><polygon points="48,47 58,55 58,58 48,50"/><polygon points="58,58 48,66 48,69 58,61"/><polygon points="48,69 58,77 58,80 48,72"/><polygon points="54,26 70,18 71,22 55,30"/><polygon points="58,34 82,46 82,85 58,85"/></symbol>
+  </svg>
+
+  <header class="bg-[#101722]/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <a href="/" class="flex items-center gap-3 shrink-0" aria-label="GL Gesso Construções, página inicial">
+        <svg class="w-8 h-8 text-gl-accent fill-current shrink-0" aria-hidden="true"><use href="#i-logo"/></svg>
+        <span class="flex flex-col">
+          <span class="font-heading font-bold text-base sm:text-lg tracking-wide text-white leading-none">GL GESSO</span>
+          <span class="font-heading font-bold text-[9px] tracking-[0.3em] text-gl-accent uppercase mt-1">Construções</span>
+        </span>
+      </a>
+      <a href="${WA}" target="_blank" rel="noopener noreferrer" data-cta="legal_header" data-channel="whatsapp"
+         class="inline-flex items-center gap-2 bg-wa hover:bg-wa-hover text-gl-base text-sm font-semibold px-4 h-11 rounded-full transition-colors">
+        <svg class="w-4 h-4 fill-current shrink-0" aria-hidden="true"><use href="#i-wa"/></svg>
+        <span class="sm:hidden">Orçamento</span><span class="hidden sm:inline">Pedir orçamento</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-14">
+    <a href="/" class="text-sm text-gl-accent hover:underline">← Voltar para o site</a>
+    <article class="legal mt-6">
+      <h1>${title}</h1>
+      <p class="legal-updated">Última atualização: ${updated}</p>
+${body}
+    </article>
+  </main>
+
+  <footer class="bg-black text-slate-400 py-10 border-t border-slate-900 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 text-center lg:text-left">
+      <div>
+        <p class="text-slate-300">GL Gesso Construções e Reformas · CNPJ: 66.247.837/0001-48</p>
+        <p>© 2026 Todos os direitos reservados.</p>
+      </div>
+      <nav class="flex flex-wrap justify-center gap-x-5" aria-label="Documentos legais">
+        <a href="/politica-de-privacidade" class="inline-block py-2 hover:text-gl-accent">Política de Privacidade</a>
+        <a href="/termos-de-uso" class="inline-block py-2 hover:text-gl-accent">Termos de Uso</a>
+        <a href="/aviso-legal" class="inline-block py-2 hover:text-gl-accent">Aviso Legal</a>
+      </nav>
+      <p>Desenvolvido por <a href="https://www.ramadigital.business/" target="_blank" rel="noopener" class="font-bold text-slate-200 hover:text-gl-accent">Rama Digital</a></p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js?v=20261026b" defer></script>
+</body>
+</html>
+`;
+
+for (const file of readdirSync("src/legal").filter((f) => f.endsWith(".html"))) {
+  const source = readFileSync(`src/legal/${file}`, "utf8");
+  const meta = Object.fromEntries(
+    source.match(/<!--(.*?)-->/s)[1].split("|").map((part) => {
+      const [key, ...rest] = part.split(":");
+      return [key.trim(), rest.join(":").trim()];
+    })
+  );
+  const body = source.replace(/<!--.*?-->\s*/s, "");
+  const slug = file.replace(/\.html$/, "");
+  writeFileSync(`${slug}.html`, layout({ slug, body, ...meta }));
+  console.log(`${slug}.html`);
+}

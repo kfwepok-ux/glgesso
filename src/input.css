@@ -18,6 +18,18 @@
 }
 
 @layer components {
+  /* Texto corrido das páginas legais. */
+  .legal h1 { @apply font-heading text-3xl sm:text-4xl font-extrabold text-white tracking-tight; }
+  .legal .legal-updated { @apply mt-2 mb-8 text-sm text-slate-400; }
+  .legal h2 { @apply font-heading text-xl font-bold text-white mt-10 mb-3; }
+  .legal h3 { @apply font-heading text-base font-bold text-white mt-6 mb-2; }
+  .legal p { @apply leading-relaxed mb-4; }
+  .legal ul { @apply list-disc pl-5 mb-4 space-y-2; }
+  .legal li { @apply leading-relaxed; }
+  .legal a { @apply text-gl-accent underline underline-offset-2 hover:text-amber-200; }
+  .legal strong { @apply text-slate-100; }
+  .legal code { @apply text-sm bg-gl-card px-1.5 py-0.5 rounded; }
+
   /* Animação de entrada só abaixo da dobra e só com JS ativo (classe "js" no <html>). */
   .js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s cubic-bezier(.16,1,.3,1), transform .6s cubic-bezier(.16,1,.3,1); }
   .js .reveal.is-revealed { opacity: 1; transform: none; }

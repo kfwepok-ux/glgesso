@@ -7,7 +7,8 @@
     "build:vendor": "node scripts/copy-vendor.mjs",
     "build:images": "node scripts/optimize-images.mjs",
     "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/site.css --minify",
-    "build": "npm run build:vendor && npm run build:images && npm run build:css"
+    "build": "npm run build:vendor && npm run build:images && npm run build:legal && npm run build:css",
+    "build:legal": "node scripts/build-legal.mjs"
   },
   "devDependencies": {
     "@fontsource/inter": "5.1.0",
