@@ -14,15 +14,7 @@ const layout = ({ slug, title, description, updated, body }) => `<!DOCTYPE html>
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MH28D3FW');</script>
   <!-- End Google Tag Manager -->
-  <!-- Google tag (gtag.js): GA4. Não criar outra tag GA4 no GTM para não duplicar dados. -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2X5RRFC76"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-P2X5RRFC76');
-  </script>
+  <!-- O GA4 (G-P2X5RRFC76) é configurado dentro do GTM; não adicionar gtag.js direto aqui. -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${title} | GL Gesso</title>
@@ -88,7 +80,7 @@ ${body}
     </div>
   </footer>
 
-  <script src="/assets/js/site.js?v=20261027" defer></script>
+  <script src="/assets/js/site.js?v=20261027b" defer></script>
 </body>
 </html>
 `;

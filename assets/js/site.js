@@ -1,20 +1,18 @@
-// GL Gesso: interações da página e eventos para o GTM (dataLayer) e o GA4 (gtag).
+// GL Gesso: interações da página e eventos para o GTM (dataLayer). O GTM repassa ao GA4 e ao Ads.
 (function () {
   "use strict";
 
   window.dataLayer = window.dataLayer || [];
-  // O GTM lê o objeto no dataLayer (ex.: conversão do Ads em cta_click);
-  // o GA4 instalado via gtag.js só recebe o que vem por gtag("event").
-  // eventCallback/eventTimeout são instruções para o GTM e não vão para o GA4.
+  // Parâmetros lidos pelas variáveis do GTM (gtm/ga4-import.json). O GTM guarda os valores
+  // entre eventos, então cada push zera os que não informa (senão um section_view herdaria,
+  // por exemplo, o service do quiz_open anterior).
+  var PARAMS = ["channel", "cta_location", "service", "link_url", "step", "step_name", "region", "size",
+    "timeline", "question", "section", "metric_name", "metric_value", "metric_rating"];
   var push = function (data) {
-    window.dataLayer.push(data);
-    if (typeof window.gtag === "function") {
-      var params = {};
-      Object.keys(data).forEach(function (key) {
-        if (["event", "eventCallback", "eventTimeout"].indexOf(key) < 0) params[key] = data[key];
-      });
-      window.gtag("event", data.event, params);
-    }
+    var entry = {};
+    PARAMS.forEach(function (key) { entry[key] = undefined; });
+    Object.keys(data).forEach(function (key) { entry[key] = data[key]; });
+    window.dataLayer.push(entry);
   };
   window.glPush = push;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
