@@ -5,20 +5,26 @@
   window.dataLayer = window.dataLayer || [];
   // O GTM lê o objeto no dataLayer (ex.: conversão do Ads em cta_click);
   // o GA4 instalado via gtag.js só recebe o que vem por gtag("event").
+  // eventCallback/eventTimeout são instruções para o GTM e não vão para o GA4.
   var push = function (data) {
     window.dataLayer.push(data);
     if (typeof window.gtag === "function") {
       var params = {};
-      Object.keys(data).forEach(function (key) { if (key !== "event") params[key] = data[key]; });
+      Object.keys(data).forEach(function (key) {
+        if (["event", "eventCallback", "eventTimeout"].indexOf(key) < 0) params[key] = data[key];
+      });
       window.gtag("event", data.event, params);
     }
   };
+  window.glPush = push;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Cliques nos CTAs: canal (whatsapp, telefone, instagram), posição na página e serviço.
   document.addEventListener("click", function (event) {
     var link = event.target.closest("a[data-cta]");
     if (!link) return;
+    // Esses CTAs abrem o quiz; a conversão (cta_click) só é registrada no envio dele.
+    if (link.hasAttribute("data-quiz") && window.glQuiz) return;
     push({
       event: "cta_click",
       channel: link.dataset.channel || "",

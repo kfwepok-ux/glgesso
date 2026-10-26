@@ -3,8 +3,6 @@
 // <!-- title: ... | description: ... | updated: ... -->
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 
-const WA = "https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento.%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20";
-
 const layout = ({ slug, title, description, updated, body }) => `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -35,7 +33,7 @@ const layout = ({ slug, title, description, updated, body }) => `<!DOCTYPE html>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="preload" href="/assets/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/assets/css/site.css?v=20261026b" />
+  <link rel="stylesheet" href="/assets/css/site.css?v=20261027" />
 </head>
 <body class="bg-gl-base text-slate-300 font-sans antialiased">
   <!-- Google Tag Manager (noscript) -->
@@ -57,7 +55,8 @@ const layout = ({ slug, title, description, updated, body }) => `<!DOCTYPE html>
           <span class="font-heading font-bold text-[9px] tracking-[0.3em] text-gl-accent uppercase mt-1">Construções</span>
         </span>
       </a>
-      <a href="${WA}" target="_blank" rel="noopener noreferrer" data-cta="legal_header" data-channel="whatsapp"
+      <!-- Abre o quiz de orçamento na página inicial. -->
+      <a href="/?orcamento=legal_header"
          class="inline-flex items-center gap-2 bg-wa hover:bg-wa-hover text-gl-base text-sm font-semibold px-4 h-11 rounded-full transition-colors">
         <svg class="w-4 h-4 fill-current shrink-0" aria-hidden="true"><use href="#i-wa"/></svg>
         <span class="sm:hidden">Orçamento</span><span class="hidden sm:inline">Pedir orçamento</span>
@@ -89,7 +88,7 @@ ${body}
     </div>
   </footer>
 
-  <script src="/assets/js/site.js?v=20261026b" defer></script>
+  <script src="/assets/js/site.js?v=20261027" defer></script>
 </body>
 </html>
 `;
