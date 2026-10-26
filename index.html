@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
+  <script>document.documentElement.classList.add('js');</script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -10,67 +11,54 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GL Gesso Construções - Especialista em Gesso e Drywall</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/projetos/Captura de tela 2026-09-26 130702 (1).png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'gl-base': '#0a0e14',
-            'gl-card': '#141b24',
-            'gl-accent': '#dfb135',
-            'gl-muted': '#8b949e',
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            heading: ['Montserrat', 'sans-serif'],
-          }
-        }
-      }
-    }
+  <title>Forro de Gesso, Sancas e Drywall no Rio de Janeiro | GL Gesso</title>
+  <meta name="description" content="Forros de gesso, sancas com LED, divisórias em drywall acústico, nichos e painéis no Rio de Janeiro, Niterói, Baixada e Sul Fluminense. Orçamento gratuito pelo WhatsApp." />
+  <link rel="canonical" href="https://www.glgesso.com.br/" />
+  <meta name="theme-color" content="#0a0e14" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="GL Gesso Construções" />
+  <meta property="og:url" content="https://www.glgesso.com.br/" />
+  <meta property="og:title" content="Forro de gesso, sancas e drywall no Rio de Janeiro | GL Gesso" />
+  <meta property="og:description" content="Da sanca de uma sala à obra completa. Obra limpa, acabamento pronto para pintura e orçamento gratuito pelo WhatsApp." />
+  <meta property="og:image" content="https://www.glgesso.com.br/assets/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preload" href="/assets/fonts/montserrat-800.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/assets/css/site.css?v=20261026" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "GL Gesso Construções",
+    "url": "https://www.glgesso.com.br/",
+    "image": "https://www.glgesso.com.br/assets/images/og-image.jpg",
+    "logo": "https://www.glgesso.com.br/apple-touch-icon.png",
+    "description": "Forros de gesso, sancas com iluminação LED, divisórias em drywall acústico, nichos, painéis e cortineiros para residências e espaços comerciais.",
+    "telephone": "+55-24-98116-2757",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua João Ventura, 11 - Catumbi",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -22.9152, "longitude": -43.1963 },
+    "areaServed": ["Rio de Janeiro", "Niterói", "Baixada Fluminense", "Sul Fluminense", "Região Serrana do Rio de Janeiro"],
+    "paymentAccepted": "Pix, transferência bancária, cartão de crédito",
+    "sameAs": ["https://www.instagram.com/glgessoconstrucoes"]
+  }
   </script>
-  <style>
-    .reveal-item {
-      opacity: 0;
-      transform: translateY(16px);
-      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .reveal-item.is-revealed {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .delay-1 { transition-delay: 0.05s; }
-    .delay-2 { transition-delay: 0.15s; }
-    .delay-3 { transition-delay: 0.25s; }
-
-    .hero-slide {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
-    }
-    .hero-slide.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-    @keyframes pulse-ring {
-      0% { transform: scale(0.96); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-      70% { transform: scale(1); box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
-      100% { transform: scale(0.96); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-    }
-    .btn-whatsapp-pulse { animation: pulse-ring 2.8s infinite cubic-bezier(0.45, 0, 0.55, 1); }
-  </style>
-
+  <!-- TODO(cliente): acrescentar "legalName" (razão social) e "taxID" (CNPJ) ao JSON-LD acima quando os dados forem enviados. -->
 </head>
 <body class="bg-gl-base text-slate-300 font-sans antialiased selection:bg-gl-accent selection:text-black">
   <!-- Google Tag Manager (noscript) -->
@@ -78,501 +66,559 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
-  <a href="https://wa.me/5524981162757" target="_blank" rel="noopener noreferrer" 
-     class="btn-whatsapp-pulse fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center cursor-pointer transition-transform hover:scale-110" 
-     aria-label="Fale conosco no WhatsApp">
-    <svg class="w-8 h-8 fill-white shrink-0" viewBox="0 0 24 24">
-      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm0 16.31a8.27 8.27 0 01-4.303-1.2l-.308-.183-3.197 1.01.996-3.116-.2-.317a8.267 8.267 0 01-1.272-4.462c0-4.577 3.724-8.301 8.303-8.301 2.217 0 4.302.864 5.87 2.432a8.26 8.26 0 012.433 5.869c0 4.578-3.725 8.302-8.323 8.302z"/>
-      <path d="M8.48 7.97c-.2-.01-.43 0-.64.08-.28.1-.86.42-.94 1.25-.1.97.68 2.05 1.47 2.97 1.48 1.7 3.39 2.5 4.8 2.92.51.15 1.15.22 1.6.09.53-.16 1.34-.84 1.54-1.39.2-.55.2-1.02.14-1.12-.06-.1-.23-.16-.49-.28-.26-.13-1.54-.76-1.78-.85-.24-.09-.42-.13-.6.13-.18.27-.69.86-.85 1.04-.16.18-.32.2-.58.07-.26-.13-1.1-.41-2.1-1.3-.77-.69-1.3-1.54-1.45-1.8-.15-.26-.02-.4.11-.53.12-.11.26-.3.39-.45.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.07-.13-.59-1.44-.83-1.98z"/>
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 100 100"><rect x="15" y="85" width="70" height="4" rx="2"/><rect x="44" y="10" width="4" height="75"/><rect x="28" y="26" width="4" height="59"/><polygon points="18,44 48,22 48,27 20,47"/><polygon points="28,34 44,24 44,85 28,85"/><rect x="48" y="14" width="4" height="71"/><rect x="58" y="14" width="4" height="71"/><polygon points="48,25 58,33 58,36 48,28"/><polygon points="58,36 48,44 48,47 58,39"/><polygon points="48,47 58,55 58,58 48,50"/><polygon points="58,58 48,66 48,69 58,61"/><polygon points="48,69 58,77 58,80 48,72"/><polygon points="54,26 70,18 71,22 55,30"/><polygon points="58,34 82,46 82,85 58,85"/></symbol>
+  </svg>
+
+  <a href="#conteudo" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-gl-accent focus:text-black focus:px-4 focus:py-2 focus:rounded-lg">Pular para o conteúdo</a>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP (aparece depois do hero) -->
+  <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento.%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+     target="_blank" rel="noopener noreferrer" data-cta="flutuante" data-channel="whatsapp"
+     class="wa-float fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-wa text-gl-base shadow-2xl flex items-center justify-center isolate"
+     aria-label="Pedir orçamento pelo WhatsApp">
+    <svg class="w-7 h-7 fill-current" aria-hidden="true"><use href="#i-wa"/></svg>
   </a>
 
-  <!-- HEADER REFINADO -->
-  <header class="bg-[#101722]/90 backdrop-blur-md sticky top-0 z-40 border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
-      
-      <div class="w-full md:w-auto flex items-center justify-between">
-        <a href="#inicio" class="flex items-center gap-3 group">
-          <svg class="w-8 h-8 text-gl-accent group-hover:scale-105 transition-transform shrink-0" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="15" y="85" width="70" height="4" rx="2" fill="currentColor"/>
-            <rect x="44" y="10" width="4" height="75" fill="currentColor"/>
-            <rect x="28" y="26" width="4" height="59" fill="currentColor"/>
-            <polygon points="18,44 48,22 48,27 20,47" fill="currentColor"/>
-            <polygon points="28,34 44,24 44,85 28,85" fill="currentColor"/>
-            <rect x="48" y="14" width="4" height="71" fill="currentColor"/>
-            <rect x="58" y="14" width="4" height="71" fill="currentColor"/>
-            <polygon points="48,25 58,33 58,36 48,28" fill="currentColor"/>
-            <polygon points="58,36 48,44 48,47 58,39" fill="currentColor"/>
-            <polygon points="48,47 58,55 58,58 48,50" fill="currentColor"/>
-            <polygon points="58,58 48,66 48,69 58,61" fill="currentColor"/>
-            <polygon points="48,69 58,77 58,80 48,72" fill="currentColor"/>
-            <polygon points="54,26 70,18 71,22 55,30" fill="currentColor"/>
-            <polygon points="58,34 82,46 82,85 58,85" fill="currentColor"/>
-          </svg>
-          <div class="flex flex-col">
-            <span class="font-heading font-bold text-lg tracking-wide text-white leading-none">GL GESSO</span>
-            <span class="font-heading text-[9px] tracking-[0.3em] text-gl-accent uppercase mt-1">Construções</span>
-          </div>
-        </a>
+  <!-- CABEÇALHO -->
+  <header class="bg-[#101722]/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <a href="#inicio" class="flex items-center gap-3 shrink-0" aria-label="GL Gesso Construções, voltar ao início">
+        <svg class="w-8 h-8 text-gl-accent fill-current shrink-0" aria-hidden="true"><use href="#i-logo"/></svg>
+        <span class="flex flex-col">
+          <span class="font-heading font-bold text-base sm:text-lg tracking-wide text-white leading-none">GL GESSO</span>
+          <span class="font-heading font-bold text-[9px] tracking-[0.3em] text-gl-accent uppercase mt-1">Construções</span>
+        </span>
+      </a>
 
-        <div class="flex items-center gap-2 md:hidden">
-          <a href="https://www.instagram.com/glgessoconstrucoes" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white p-2 rounded-full">
-            <svg class="w-4 h-4 fill-white shrink-0" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="https://wa.me/5524981162757" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white p-2 rounded-full">
-            <svg class="w-4 h-4 fill-white shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <nav class="w-full md:w-auto flex items-center gap-1.5 text-xs font-medium text-slate-400 overflow-x-auto no-scrollbar py-1">
-        <a href="#inicio" class="px-3.5 py-1.5 rounded-lg hover:text-gl-accent hover:bg-slate-800/60 whitespace-nowrap transition-all">Início</a>
-        <a href="#solucoes" class="px-3.5 py-1.5 rounded-lg hover:text-gl-accent hover:bg-slate-800/60 whitespace-nowrap transition-all">Soluções</a>
-        <a href="#projetos" class="px-3.5 py-1.5 rounded-lg hover:text-gl-accent hover:bg-slate-800/60 whitespace-nowrap transition-all">Portfólio</a>
-        <a href="#relatos" class="px-3.5 py-1.5 rounded-lg hover:text-gl-accent hover:bg-slate-800/60 whitespace-nowrap transition-all">Relatos</a>
-        <a href="#faq" class="px-3.5 py-1.5 rounded-lg hover:text-gl-accent hover:bg-slate-800/60 whitespace-nowrap transition-all">FAQ</a>
-        <a href="#contato" class="px-3.5 py-1.5 rounded-lg hover:text-gl-accent hover:bg-slate-800/60 whitespace-nowrap transition-all">Contato</a>
+      <nav class="hidden lg:flex items-center gap-1 text-sm font-medium text-slate-300" aria-label="Navegação principal">
+        <a href="#servicos" class="px-3 py-3 rounded-lg hover:text-gl-accent">Serviços</a>
+        <a href="#obras" class="px-3 py-3 rounded-lg hover:text-gl-accent">Obras</a>
+        <a href="#como-funciona" class="px-3 py-3 rounded-lg hover:text-gl-accent">Como funciona</a>
+        <a href="#depoimentos" class="px-3 py-3 rounded-lg hover:text-gl-accent">Depoimentos</a>
+        <a href="#duvidas" class="px-3 py-3 rounded-lg hover:text-gl-accent">Dúvidas</a>
       </nav>
 
-      <div class="hidden md:flex items-center gap-3 shrink-0">
-        <a href="https://www.instagram.com/glgessoconstrucoes" target="_blank" rel="noopener noreferrer" 
-           class="inline-flex items-center gap-2 bg-gradient-to-r from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white text-xs font-semibold px-4 py-2 rounded-full transition-transform hover:scale-105">
-          <svg class="w-3.5 h-3.5 fill-white shrink-0" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          <span>Instagram</span>
+      <div class="flex items-center gap-2">
+        <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento.%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+           target="_blank" rel="noopener noreferrer" data-cta="header" data-channel="whatsapp"
+           class="inline-flex items-center gap-2 bg-wa hover:bg-wa-hover text-gl-base text-sm font-semibold px-4 h-11 rounded-full transition-colors">
+          <svg class="w-4 h-4 fill-current shrink-0" aria-hidden="true"><use href="#i-wa"/></svg>
+          <span class="sm:hidden">Orçamento</span><span class="hidden sm:inline">Pedir orçamento</span>
         </a>
 
-        <a href="https://wa.me/5524981162757" target="_blank" rel="noopener noreferrer" 
-           class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold px-4 py-2 rounded-full transition-transform hover:scale-105">
-          <svg class="w-4 h-4 fill-white shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          <span>Orçamento</span>
-        </a>
+        <details class="menu-mobile relative lg:hidden">
+          <summary class="w-11 h-11 rounded-full border border-slate-700 flex items-center justify-center cursor-pointer text-slate-200" aria-label="Abrir menu">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </summary>
+          <nav class="absolute right-0 mt-2 w-56 bg-gl-card border border-slate-800 rounded-xl shadow-2xl p-2 flex flex-col text-sm text-slate-200" aria-label="Navegação principal (celular)">
+            <a href="#servicos" class="px-4 py-3 rounded-lg hover:bg-slate-800/70">Serviços</a>
+            <a href="#obras" class="px-4 py-3 rounded-lg hover:bg-slate-800/70">Obras</a>
+            <a href="#como-funciona" class="px-4 py-3 rounded-lg hover:bg-slate-800/70">Como funciona</a>
+            <a href="#depoimentos" class="px-4 py-3 rounded-lg hover:bg-slate-800/70">Depoimentos</a>
+            <a href="#duvidas" class="px-4 py-3 rounded-lg hover:bg-slate-800/70">Dúvidas</a>
+            <a href="#contato" class="px-4 py-3 rounded-lg hover:bg-slate-800/70">Contato</a>
+          </nav>
+        </details>
       </div>
-
     </div>
   </header>
 
-  <main>
-    <!-- HERO SECTION REPROJETADA (ESTILO ESTÚDIO DE ARQUITETURA) -->
-    <section id="inicio" class="py-20 md:py-32 relative overflow-hidden">
-      <!-- Elemento decorativo de luz de fundo subtil -->
-      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gl-accent/5 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
-        
-        <div class="md:col-span-7 space-y-8 text-center md:text-left">
-          
-          <div class="inline-flex items-center gap-2.5 bg-[#141b24] border border-slate-800 px-4 py-2 rounded-full text-xs font-medium tracking-widest text-gl-accent uppercase shadow-sm reveal-item delay-1">
-            <span class="w-2 h-2 rounded-full bg-gl-accent animate-pulse"></span>
-            Especialistas em Gesso & Drywall
-          </div>
-
-          <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.08] reveal-item delay-2">
-            Espaços moldados com <span class="text-transparent bg-clip-text bg-gradient-to-r from-gl-accent via-amber-200 to-gl-accent">precisão</span>.
-          </h1>
-
-          <p class="text-slate-400 text-base sm:text-lg max-w-xl mx-auto md:mx-0 font-light leading-relaxed reveal-item delay-3">
-            Execução impecável de forros, sancas e divisórias termoacústicas para ambientes residenciais e comerciais de alto padrão no Rio de Janeiro.
+  <main id="conteudo">
+    <!-- HERO -->
+    <section id="inicio" data-section="hero" class="pt-10 pb-16 md:py-24 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-12 gap-10 lg:gap-16 items-center">
+        <div class="md:col-span-7 space-y-6 sm:space-y-7">
+          <p class="inline-flex items-center gap-2.5 bg-gl-card border border-slate-800 px-4 py-2 rounded-full text-xs font-semibold tracking-widest text-gl-accent uppercase">
+            <span class="w-2 h-2 rounded-full bg-gl-accent" aria-hidden="true"></span>
+            Especialistas em gesso e drywall
           </p>
 
-          <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center md:justify-start reveal-item delay-3">
-            <a href="https://wa.me/5524981162757" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-sm px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-emerald-950/50 hover:-translate-y-1">
-              <svg class="w-5 h-5 fill-white shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-              Solicitar Orçamento via WhatsApp
-            </a>
-            <a href="#projetos" class="border border-slate-700 hover:border-slate-500 text-slate-300 font-medium text-sm px-8 py-4 rounded-xl transition-all text-center hover:bg-slate-800/50">
-              Explorar Trabalhos
-            </a>
+          <h1 class="font-heading text-[2.15rem] sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
+            Forro de gesso, sancas e drywall no <span class="text-gl-accent">Rio de Janeiro</span>
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed">
+            Da sanca de uma sala à obra completa: forros, rasgos de luz com LED, divisórias acústicas, nichos e painéis para casas, apartamentos e espaços comerciais. Obra limpa e acabamento pronto para pintura.
+          </p>
+
+          <div class="space-y-3">
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento.%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+                 target="_blank" rel="noopener noreferrer" data-cta="hero" data-channel="whatsapp"
+                 class="inline-flex items-center justify-center gap-3 bg-wa hover:bg-wa-hover text-gl-base font-semibold text-base px-7 py-4 rounded-xl shadow-lg transition-colors">
+                <svg class="w-5 h-5 fill-current shrink-0" aria-hidden="true"><use href="#i-wa"/></svg>
+                Pedir orçamento grátis pelo WhatsApp
+              </a>
+              <a href="#obras" class="inline-flex items-center justify-center border border-slate-600 hover:border-slate-400 text-slate-200 font-medium text-base px-7 py-4 rounded-xl transition-colors">
+                Ver obras realizadas
+              </a>
+            </div>
+            <p class="text-sm text-slate-400">Orçamento gratuito · Visita técnica a combinar · Rio, Niterói, Baixada e Sul Fluminense</p>
           </div>
 
-          <!-- Bento Grid de Estatísticas Sofisticado -->
-          <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
-            <div class="bg-[#141b24] border border-slate-800/80 p-4 rounded-xl hover:border-gl-accent/50 transition-colors text-left">
-              <strong class="text-white text-lg block font-heading">+10 Anos</strong>
-              <span class="text-[11px] text-slate-400">Tradição </span>
-            </div>
-            <div class="bg-[#141b24] border border-slate-800/80 p-4 rounded-xl hover:border-gl-accent/50 transition-colors text-left">
-              <strong class="text-white text-lg block font-heading">+1.000 Obras</strong>
-              <span class="text-[11px] text-slate-400">Executadas</span>
-            </div>
-            <div class="bg-[#141b24] border border-slate-800/80 p-4 rounded-xl hover:border-gl-accent/50 transition-colors text-left">
-              <strong class="text-white text-lg block font-heading">Rio de Janeiro</strong>
-              <span class="text-[11px] text-slate-400">& Região </span>
-            </div>
-            <div class="bg-[#141b24] border border-slate-800/80 p-4 rounded-xl hover:border-gl-accent/50 transition-colors text-left">
-              <strong class="text-white text-lg block font-heading">Garantia</strong>
-              <span class="text-[11px] text-slate-400">Qualidade ABNT</span>
-            </div>
-          </div>
-
+          <ul class="pt-2 grid grid-cols-2 lg:grid-cols-4 gap-3" aria-label="Destaques">
+            <li class="bg-gl-card border border-slate-800 p-4 rounded-xl">
+              <strong class="text-white text-lg block font-heading">+10 anos</strong>
+              <span class="text-xs text-slate-400">de experiência</span>
+            </li>
+            <li class="bg-gl-card border border-slate-800 p-4 rounded-xl">
+              <strong class="text-white text-lg block font-heading">+1.000 obras</strong>
+              <span class="text-xs text-slate-400">executadas</span>
+            </li>
+            <li class="bg-gl-card border border-slate-800 p-4 rounded-xl">
+              <!-- TODO(cliente): linkar para as avaliações do Perfil da Empresa no Google quando o link for enviado. -->
+              <strong class="text-white text-lg block font-heading"><span class="text-gl-accent" aria-hidden="true">★</span> 4,9</strong>
+              <span class="text-xs text-slate-400">nota no Google</span>
+            </li>
+            <li class="bg-gl-card border border-slate-800 p-4 rounded-xl">
+              <strong class="text-white text-lg block font-heading">Orçamento</strong>
+              <span class="text-xs text-slate-400">gratuito</span>
+            </li>
+          </ul>
         </div>
 
-        <!-- CARROSSEL COM MOLDURA DE LUXO -->
-        <div class="md:col-span-5 relative reveal-item delay-2">
-          <div class="absolute -top-4 -left-4 bg-[#141b24] text-white py-3 px-5 rounded-xl shadow-2xl border border-slate-800 flex items-center gap-3 z-30">
-            <span class="text-gl-accent text-base">★</span>
-            <div class="text-left">
-              <p class="text-xs font-bold text-white leading-tight">4.9 / 5.0</p>
-              <p class="text-[10px] text-slate-400 leading-tight">Avaliação de Clientes</p>
+        <div class="md:col-span-5">
+          <div id="hero-carousel" class="aspect-[4/5] bg-gl-card rounded-2xl overflow-hidden shadow-2xl relative border border-slate-800" aria-roledescription="carrossel" aria-label="Fotos de obras da GL Gesso">
+            <figure class="hero-slide is-active" aria-label="1 de 3">
+              <img src="/assets/images/obras/sancas-perfil-led-480.webp" srcset="/assets/images/obras/sancas-perfil-led-480.webp 480w, /assets/images/obras/sancas-perfil-led-960.webp 736w" sizes="(min-width: 768px) 40vw, 92vw" width="736" height="1104" alt="Teto com perfis de LED embutidos e sanca iluminada ao redor de um lustre" class="object-cover w-full h-full" fetchpriority="high" decoding="async" />
+              <figcaption class="absolute inset-x-0 bottom-0 p-6 pt-16 bg-gradient-to-t from-black/85 to-transparent text-white">
+                <span class="block text-[11px] uppercase tracking-widest text-gl-accent mb-1 font-semibold">Iluminação</span>
+                <span class="font-heading font-bold text-lg">Perfis de LED e sancas embutidas</span>
+              </figcaption>
+            </figure>
+            <figure class="hero-slide" aria-label="2 de 3">
+              <img src="/assets/images/obras/forro-rebaixado-luz-480.webp" srcset="/assets/images/obras/forro-rebaixado-luz-480.webp 480w, /assets/images/obras/forro-rebaixado-luz-960.webp 736w" sizes="(min-width: 768px) 40vw, 92vw" width="736" height="1104" alt="Forro de gesso rebaixado com luz difusa" class="object-cover w-full h-full" loading="lazy" decoding="async" />
+              <figcaption class="absolute inset-x-0 bottom-0 p-6 pt-16 bg-gradient-to-t from-black/85 to-transparent text-white">
+                <span class="block text-[11px] uppercase tracking-widest text-gl-accent mb-1 font-semibold">Forros</span>
+                <span class="font-heading font-bold text-lg">Forro rebaixado com luz difusa</span>
+              </figcaption>
+            </figure>
+            <figure class="hero-slide" aria-label="3 de 3">
+              <img src="/assets/images/obras/paredes-3d-sala-480.webp" srcset="/assets/images/obras/paredes-3d-sala-480.webp 480w, /assets/images/obras/paredes-3d-sala-960.webp 736w" sizes="(min-width: 768px) 40vw, 92vw" width="736" height="1307" alt="Parede 3D em gesso com relevo texturizado" class="object-cover w-full h-full" loading="lazy" decoding="async" />
+              <figcaption class="absolute inset-x-0 bottom-0 p-6 pt-16 bg-gradient-to-t from-black/85 to-transparent text-white">
+                <span class="block text-[11px] uppercase tracking-widest text-gl-accent mb-1 font-semibold">Paredes 3D</span>
+                <span class="font-heading font-bold text-lg">Relevo texturizado sob medida</span>
+              </figcaption>
+            </figure>
+
+            <div id="carousel-dots" class="absolute top-3 right-3 flex items-center bg-black/50 rounded-full backdrop-blur-md">
+              <button type="button" class="carousel-dot w-8 h-8 flex items-center justify-center" aria-label="Mostrar foto 1 de 3" aria-current="true"><span class="w-2 h-2 rounded-full bg-white"></span></button>
+              <button type="button" class="carousel-dot w-8 h-8 flex items-center justify-center" aria-label="Mostrar foto 2 de 3"><span class="w-2 h-2 rounded-full bg-white/40"></span></button>
+              <button type="button" class="carousel-dot w-8 h-8 flex items-center justify-center" aria-label="Mostrar foto 3 de 3"><span class="w-2 h-2 rounded-full bg-white/40"></span></button>
             </div>
-          </div>
-
-          <div id="hero-carousel" class="aspect-[4/5] bg-[#141b24] rounded-2xl overflow-hidden shadow-2xl relative border-2 border-slate-800/80 group">
-            
-            <div class="hero-slide active">
-              <img src="assets/images/projetos/perfil led.jpeg" alt="Perfis de LED" class="object-cover w-full h-full" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
-                <p class="text-[10px] uppercase tracking-widest text-gl-accent mb-1 font-semibold">Arquitetura de Luz</p>
-                <h3 class="font-heading font-semibold text-lg">Perfis de LED & Sancas Embutidas</h3>
-              </div>
-            </div>
-
-            <div class="hero-slide">
-              <img src="assets/images/projetos/forro.jpeg" alt="Forro Rebaixado" class="object-cover w-full h-full" onerror="this.src='https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
-                <p class="text-[10px] uppercase tracking-widest text-gl-accent mb-1 font-semibold">Acabamento Fino</p>
-                <h3 class="font-heading font-semibold text-lg">Forro Rebaixado & Luz Difusa</h3>
-              </div>
-            </div>
-
-            <div class="hero-slide">
-              <img src="assets/images/projetos/paredes 3D.jpeg" alt="Paredes 3D" class="object-cover w-full h-full" onerror="this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80'" />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent"></div>
-              <div class="absolute bottom-6 left-6 right-6 text-white pointer-events-none">
-                <p class="text-[10px] uppercase tracking-widest text-gl-accent mb-1 font-semibold">Relevo Texturizado</p>
-                <h3 class="font-heading font-semibold text-lg">Paredes 3D & Design Exclusivo</h3>
-              </div>
-            </div>
-
-            <div id="carousel-dots" class="absolute bottom-5 right-5 flex items-center gap-1.5 z-30 bg-black/50 px-2.5 py-1.5 rounded-full backdrop-blur-md">
-              <button class="w-1.5 h-1.5 rounded-full bg-white transition-all"></button>
-              <button class="w-1.5 h-1.5 rounded-full bg-white/40 transition-all"></button>
-              <button class="w-1.5 h-1.5 rounded-full bg-white/40 transition-all"></button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SOLUÇÕES -->
-    <section id="solucoes" class="py-24 border-t border-slate-800/60 bg-[#141b24]/30">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="max-w-xl mb-16 reveal-item delay-1">
-          <span class="text-xs font-semibold uppercase tracking-widest text-gl-accent block mb-2">Especialidades</span>
-          <h2 class="font-heading text-3xl font-bold text-white tracking-tight">Soluções construtivas de alto padrão.</h2>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-[#141b24] border border-slate-800 p-8 rounded-2xl hover:border-gl-accent hover:-translate-y-1.5 transition-all duration-300 shadow-md reveal-item delay-1">
-            <span class="text-gl-accent text-xs font-mono font-bold block mb-4">01 / SISTEMA</span>
-            <h3 class="font-heading font-bold text-lg text-white mb-2">Drywall Acústico</h3>
-            <p class="text-slate-400 text-sm font-light leading-relaxed">Paredes divisórias leves com isolamento termoacústico superior para máxima privacidade.</p>
-          </div>
-
-          <div class="bg-[#141b24] border border-slate-800 p-8 rounded-2xl hover:border-gl-accent hover:-translate-y-1.5 transition-all duration-300 shadow-md reveal-item delay-2">
-            <span class="text-gl-accent text-xs font-mono font-bold block mb-4">02 / TETO</span>
-            <h3 class="font-heading font-bold text-lg text-white mb-2">Forros Planos</h3>
-            <p class="text-slate-400 text-sm font-light leading-relaxed">Perfeito nivelamento para ocultar fiações e embutir projetos luminotécnicos modernos.</p>
-          </div>
-
-          <div class="bg-[#141b24] border border-slate-800 p-8 rounded-2xl hover:border-gl-accent hover:-translate-y-1.5 transition-all duration-300 shadow-md reveal-item delay-3">
-            <span class="text-gl-accent text-xs font-mono font-bold block mb-4">03 / DESIGN</span>
-            <h3 class="font-heading font-bold text-lg text-white mb-2">Sancas & Rasgos de Luz</h3>
-            <p class="text-slate-400 text-sm font-light leading-relaxed">Iluminação indireta embutida e perfis lineares de LED que valorizam os volumes.</p>
-          </div>
-
-          <div class="bg-[#141b24] border border-slate-800 p-8 rounded-2xl hover:border-gl-accent hover:-translate-y-1.5 transition-all duration-300 shadow-md reveal-item delay-1">
-            <span class="text-gl-accent text-xs font-mono font-bold block mb-4">04 / MOBILIÁRIO</span>
-            <h3 class="font-heading font-bold text-lg text-white mb-2">Armários & Closets de Gesso</h3>
-            <p class="text-slate-400 text-sm font-light leading-relaxed">Estruturas em drywall e gesso acartonado moldadas sob medida para closets e prateleiras.</p>
-          </div>
-
-          <div class="bg-[#141b24] border border-slate-800 p-8 rounded-2xl hover:border-gl-accent hover:-translate-y-1.5 transition-all duration-300 shadow-md reveal-item delay-2">
-            <span class="text-gl-accent text-xs font-mono font-bold block mb-4">05 / ACABAMENTO</span>
-            <h3 class="font-heading font-bold text-lg text-white mb-2">Cortineiros Embutidos</h3>
-            <p class="text-slate-400 text-sm font-light leading-relaxed">Rasgos discretos no teto para cortinas, com opção de fita LED integrada.</p>
-          </div>
-
-          <div class="bg-[#141b24] border border-slate-800 p-8 rounded-2xl hover:border-gl-accent hover:-translate-y-1.5 transition-all duration-300 shadow-md reveal-item delay-3">
-            <span class="text-gl-accent text-xs font-mono font-bold block mb-4">06 / DETALHE</span>
-            <h3 class="font-heading font-bold text-lg text-white mb-2">Nichos & Painéis de TV</h3>
-            <p class="text-slate-400 text-sm font-light leading-relaxed">Estantes embutidas, nichos iluminados e painéis arquitetônicos exclusivos.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PORTFÓLIO -->
-    <section id="projetos" class="py-24 bg-[#141b24]/30 border-t border-slate-800/60">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 reveal-item delay-1">
+    <!-- SERVIÇOS -->
+    <section id="servicos" data-section="servicos" class="py-20 border-t border-slate-800/60 bg-gl-card/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl mb-12 reveal">
+          <p class="text-xs font-semibold uppercase tracking-widest text-gl-accent mb-2">Serviços</p>
+          <h2 class="font-heading text-3xl font-bold text-white tracking-tight">O que fazemos em gesso e drywall</h2>
+          <p class="mt-3 text-slate-400">Escolha o serviço e peça o orçamento já com o assunto certo. Atendemos de um ambiente a obras completas, residenciais e comerciais.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <article class="bg-gl-card border border-slate-800 p-7 rounded-2xl flex flex-col reveal">
+            <h3 class="font-heading font-bold text-lg text-white mb-2">Drywall acústico</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Paredes divisórias leves com isolamento termoacústico para mais privacidade em casa, no consultório ou no escritório.</p>
+            <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento%20de%20divis%C3%B3ria%20em%20drywall%20ac%C3%BAstico.%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+               target="_blank" rel="noopener noreferrer" data-cta="servicos" data-channel="whatsapp" data-service="drywall"
+               class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-gl-accent hover:underline py-2">Orçamento de drywall <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="bg-gl-card border border-slate-800 p-7 rounded-2xl flex flex-col reveal">
+            <h3 class="font-heading font-bold text-lg text-white mb-2">Forros de gesso</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Forro liso ou rebaixado, bem nivelado, para esconder fiações e embutir spots e projetos de iluminação.</p>
+            <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento%20de%20forro%20de%20gesso.%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+               target="_blank" rel="noopener noreferrer" data-cta="servicos" data-channel="whatsapp" data-service="forro"
+               class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-gl-accent hover:underline py-2">Orçamento de forro <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="bg-gl-card border border-slate-800 p-7 rounded-2xl flex flex-col reveal">
+            <h3 class="font-heading font-bold text-lg text-white mb-2">Sancas e rasgos de luz</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Iluminação indireta embutida e perfis lineares de LED que valorizam o ambiente.</p>
+            <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento%20de%20sanca%20com%20ilumina%C3%A7%C3%A3o%20LED.%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+               target="_blank" rel="noopener noreferrer" data-cta="servicos" data-channel="whatsapp" data-service="sanca"
+               class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-gl-accent hover:underline py-2">Orçamento de sanca com LED <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="bg-gl-card border border-slate-800 p-7 rounded-2xl flex flex-col reveal">
+            <h3 class="font-heading font-bold text-lg text-white mb-2">Armários e closets de gesso</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Estruturas em drywall e gesso acartonado feitas sob medida para closets e prateleiras.</p>
+            <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento%20de%20arm%C3%A1rio%20ou%20closet%20de%20gesso.%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+               target="_blank" rel="noopener noreferrer" data-cta="servicos" data-channel="whatsapp" data-service="closet"
+               class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-gl-accent hover:underline py-2">Orçamento de closet <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="bg-gl-card border border-slate-800 p-7 rounded-2xl flex flex-col reveal">
+            <h3 class="font-heading font-bold text-lg text-white mb-2">Cortineiros embutidos</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Rasgos discretos no teto para cortinas, com opção de fita LED integrada.</p>
+            <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento%20de%20cortineiro%20embutido.%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+               target="_blank" rel="noopener noreferrer" data-cta="servicos" data-channel="whatsapp" data-service="cortineiro"
+               class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-gl-accent hover:underline py-2">Orçamento de cortineiro <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="bg-gl-card border border-slate-800 p-7 rounded-2xl flex flex-col reveal">
+            <h3 class="font-heading font-bold text-lg text-white mb-2">Nichos e painéis de TV</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-5">Estantes embutidas, nichos iluminados e painéis com reforço interno para TV.</p>
+            <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento%20de%20nicho%20ou%20painel%20de%20TV.%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+               target="_blank" rel="noopener noreferrer" data-cta="servicos" data-channel="whatsapp" data-service="nicho"
+               class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-gl-accent hover:underline py-2">Orçamento de nicho ou painel <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBRAS -->
+    <section id="obras" data-section="obras" class="py-20 border-t border-slate-800/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 reveal">
           <div>
-            <span class="text-xs font-semibold uppercase tracking-widest text-gl-accent block mb-2">Portfólio</span>
-            <h2 class="font-heading text-3xl font-bold text-white tracking-tight">Projetos executados</h2>
+            <p class="text-xs font-semibold uppercase tracking-widest text-gl-accent mb-2">Obras realizadas</p>
+            <h2 class="font-heading text-3xl font-bold text-white tracking-tight">Trabalhos executados pela nossa equipe</h2>
           </div>
-          <a href="https://www.instagram.com/glgessoconstrucoes" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-gl-accent hover:underline">
-            Ver galeria completa no Instagram &rarr;
+          <a href="https://www.instagram.com/glgessoconstrucoes" target="_blank" rel="noopener noreferrer" data-cta="obras" data-channel="instagram"
+             class="inline-flex items-center gap-2 text-sm font-semibold text-gl-accent hover:underline py-2">
+            <svg class="w-4 h-4 fill-current" aria-hidden="true"><use href="#i-ig"/></svg>
+            Mais obras no Instagram <span aria-hidden="true">→</span>
           </a>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="group bg-[#141b24] border border-slate-800 p-4 rounded-2xl reveal-item delay-1">
-            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black mb-4">
-              <img src="assets/images/projetos/Paredes 3D.png" alt="Divisórias" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        <!-- TODO(cliente): acrescentar bairro e prazo de cada obra nas legendas quando forem enviados. -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <figure class="bg-gl-card border border-slate-800 p-3 rounded-2xl reveal">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black">
+              <img src="/assets/images/obras/sancas-iluminacao-led-960.webp" width="478" height="470" alt="Sala com sanca de gesso e iluminação LED amarela ao redor do teto" class="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
-            <h3 class="font-heading font-semibold text-base text-white text-center py-2">Paredes 3D</h3>
-          </div>
+            <figcaption class="px-2 pt-4 pb-2">
+              <span class="font-heading font-bold text-white block">Sancas e iluminação LED</span>
+              <span class="text-sm text-slate-400">Sanca perimetral com luz indireta</span>
+            </figcaption>
+          </figure>
 
-          <div class="group bg-[#141b24] border border-slate-800 p-4 rounded-2xl reveal-item delay-2">
-            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black mb-4">
-              <img src="assets/images/projetos/Sancas e iluminação LED.png" alt="Sancas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <figure class="bg-gl-card border border-slate-800 p-3 rounded-2xl reveal">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black">
+              <img src="/assets/images/obras/forro-rebaixado-480.webp" srcset="/assets/images/obras/forro-rebaixado-480.webp 480w, /assets/images/obras/forro-rebaixado-960.webp 601w" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 92vw" width="601" height="505" alt="Forro de gesso rebaixado com spots e pendentes" class="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
-            <h3 class="font-heading font-semibold text-base text-white text-center py-2">Sancas & Iluminação LED</h3>
-          </div>
+            <figcaption class="px-2 pt-4 pb-2">
+              <span class="font-heading font-bold text-white block">Forro de gesso rebaixado</span>
+              <span class="text-sm text-slate-400">Rebaixamento com spots embutidos</span>
+            </figcaption>
+          </figure>
 
-          <div class="group bg-[#141b24] border border-slate-800 p-4 rounded-2xl reveal-item delay-3">
-            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black mb-4">
-              <img src="assets/images/projetos/Forro rebaixado.png" alt="Forros" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <figure class="bg-gl-card border border-slate-800 p-3 rounded-2xl reveal">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black">
+              <img src="/assets/images/obras/paredes-3d-480.webp" srcset="/assets/images/obras/paredes-3d-480.webp 480w, /assets/images/obras/paredes-3d-960.webp 542w" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 92vw" width="542" height="728" alt="Parede 3D em gesso atrás da TV" class="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
-            <h3 class="font-heading font-semibold text-base text-white text-center py-2">Forro de Gesso Rebaixado</h3>
-          </div>
+            <figcaption class="px-2 pt-4 pb-2">
+              <span class="font-heading font-bold text-white block">Paredes 3D</span>
+              <span class="text-sm text-slate-400">Painel de TV com relevo em gesso</span>
+            </figcaption>
+          </figure>
 
-          <div class="group bg-[#141b24] border border-slate-800 p-4 rounded-2xl reveal-item delay-1">
-            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black mb-4">
-              <img src="assets/images/projetos/Isolamento.png" alt="Isolamento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <figure class="bg-gl-card border border-slate-800 p-3 rounded-2xl reveal">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black">
+              <img src="/assets/images/obras/nichos-paineis-960.webp" width="424" height="754" alt="Estante de gesso com nichos iluminados" class="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
-            <h3 class="font-heading font-semibold text-base text-white text-center py-2">Isolamento Termoacústico</h3>
-          </div>
+            <figcaption class="px-2 pt-4 pb-2">
+              <span class="font-heading font-bold text-white block">Nichos e painéis decorativos</span>
+              <span class="text-sm text-slate-400">Estante embutida com spots</span>
+            </figcaption>
+          </figure>
 
-          <div class="group bg-[#141b24] border border-slate-800 p-4 rounded-2xl reveal-item delay-2">
-            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black mb-4">
-              <img src="assets/images/projetos/Nichos e paineis decortaivos.png" alt="Nichos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <figure class="bg-gl-card border border-slate-800 p-3 rounded-2xl reveal">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black">
+              <img src="/assets/images/obras/isolamento-termoacustico-480.webp" srcset="/assets/images/obras/isolamento-termoacustico-480.webp 480w, /assets/images/obras/isolamento-termoacustico-960.webp 544w" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 92vw" width="544" height="732" alt="Obra em andamento com placas de drywall e isolamento termoacústico" class="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
-            <h3 class="font-heading font-semibold text-base text-white text-center py-2">Nichos e Painéis Decorativos</h3>
-          </div>
+            <figcaption class="px-2 pt-4 pb-2">
+              <span class="font-heading font-bold text-white block">Isolamento termoacústico</span>
+              <span class="text-sm text-slate-400">Obra em andamento, antes do acabamento</span>
+            </figcaption>
+          </figure>
 
-          <div class="group bg-[#141b24] border border-slate-800 p-4 rounded-2xl reveal-item delay-3">
-            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black mb-4">
-              <img src="assets/images/projetos/Comerciais.png" alt="Comercial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <figure class="bg-gl-card border border-slate-800 p-3 rounded-2xl reveal">
+            <div class="aspect-[4/3] overflow-hidden rounded-xl bg-black">
+              <img src="/assets/images/obras/ambientes-comerciais-480.webp" srcset="/assets/images/obras/ambientes-comerciais-480.webp 480w, /assets/images/obras/ambientes-comerciais-960.webp 903w" sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 92vw" width="903" height="675" alt="Espaço comercial amplo com forro de drywall" class="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
-            <h3 class="font-heading font-semibold text-base text-white text-center py-2">Ambientes Comerciais & Lojas</h3>
-          </div>
+            <figcaption class="px-2 pt-4 pb-2">
+              <span class="font-heading font-bold text-white block">Ambientes comerciais</span>
+              <span class="text-sm text-slate-400">Forro em drywall para loja e escritório</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="mt-10 flex flex-col sm:flex-row sm:items-center gap-4 bg-gl-card border border-slate-800 rounded-2xl p-6 reveal">
+          <p class="text-white font-heading font-bold text-lg sm:flex-1">Gostou de algum desses acabamentos?</p>
+          <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vi%20as%20obras%20no%20site%20da%20GL%20Gesso%20e%20quero%20um%20projeto%20parecido.%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+             target="_blank" rel="noopener noreferrer" data-cta="obras" data-channel="whatsapp"
+             class="inline-flex items-center justify-center gap-2 bg-wa hover:bg-wa-hover text-gl-base font-semibold px-6 py-3.5 rounded-xl transition-colors">
+            <svg class="w-5 h-5 fill-current shrink-0" aria-hidden="true"><use href="#i-wa"/></svg>
+            Quero um projeto assim
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- RELATOS DOS CLIENTES -->
-    <section id="relatos" class="py-24 border-t border-slate-800/60">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center max-w-xl mx-auto mb-16 reveal-item delay-1">
-          <span class="text-xs font-semibold uppercase tracking-widest text-gl-accent block mb-2">Depoimentos</span>
-          <h2 class="font-heading text-3xl font-bold text-white tracking-tight">Relatos de quem já transformou o ambiente</h2>
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona" data-section="como_funciona" class="py-20 border-t border-slate-800/60 bg-gl-card/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl mb-12 reveal">
+          <p class="text-xs font-semibold uppercase tracking-widest text-gl-accent mb-2">Como funciona</p>
+          <h2 class="font-heading text-3xl font-bold text-white tracking-tight">Do primeiro contato à entrega</h2>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-[#141b24] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between reveal-item delay-1">
-            <div>
-              <div class="text-gl-accent text-sm mb-4">★★★★★</div>
-              <p class="text-slate-300 text-sm font-light italic leading-relaxed mb-6">
-                "Fizeram o rebaixamento de gesso e as sancas com fita de LED no meu apartamento. O acabamento ficou perfeito, alinhamento impecável e sem bagunça."
-              </p>
-            </div>
-            <div>
-              <p class="font-heading font-bold text-sm text-white">Rodrigo Silva</p>
-              <p class="text-xs text-slate-500">Cliente Residencial • Rio de Janeiro</p>
-            </div>
-          </div>
+        <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <li class="bg-gl-card border border-slate-800 p-6 rounded-2xl reveal">
+            <span class="font-heading font-extrabold text-3xl text-gl-accent">1</span>
+            <h3 class="font-heading font-bold text-white mt-3 mb-2">Envie fotos e medidas</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">Pelo WhatsApp, mande fotos do ambiente, a medida aproximada e o bairro.</p>
+          </li>
+          <li class="bg-gl-card border border-slate-800 p-6 rounded-2xl reveal">
+            <span class="font-heading font-extrabold text-3xl text-gl-accent">2</span>
+            <h3 class="font-heading font-bold text-white mt-3 mb-2">Orçamento gratuito</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">Avaliamos o que você precisa e indicamos a melhor solução, sem custo.</p>
+          </li>
+          <li class="bg-gl-card border border-slate-800 p-6 rounded-2xl reveal">
+            <span class="font-heading font-extrabold text-3xl text-gl-accent">3</span>
+            <h3 class="font-heading font-bold text-white mt-3 mb-2">Visita técnica</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">Quando necessário, combinamos uma visita para medir e confirmar os detalhes.</p>
+          </li>
+          <li class="bg-gl-card border border-slate-800 p-6 rounded-2xl reveal">
+            <span class="font-heading font-extrabold text-3xl text-gl-accent">4</span>
+            <h3 class="font-heading font-bold text-white mt-3 mb-2">Execução e entrega</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">Protegemos pisos e móveis e entregamos o espaço limpo, com juntas tratadas e pronto para pintura.</p>
+          </li>
+        </ol>
 
-          <div class="bg-[#141b24] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between reveal-item delay-2">
-            <div>
-              <div class="text-gl-accent text-sm mb-4">★★★★★</div>
-              <p class="text-slate-300 text-sm font-light italic leading-relaxed mb-6">
-                "Precisava dividir duas salas comerciais rapidamente. Fizeram o drywall acústico no fim de semana e na segunda-feira já estávamos a atender clientes."
-              </p>
-            </div>
-            <div>
-              <p class="font-heading font-bold text-sm text-white">Dra. Amanda Castro</p>
-              <p class="text-xs text-slate-500">Consultório Odontológico</p>
-            </div>
-          </div>
-
-          <div class="bg-[#141b24] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between reveal-item delay-3">
-            <div>
-              <div class="text-gl-accent text-sm mb-4">★★★★★</div>
-              <p class="text-slate-300 text-sm font-light italic leading-relaxed mb-6">
-                "Equipe extremamente pontual, honesta e técnica. Recomendo a GL Gesso para qualquer pessoa que procure qualidade e cumprimento de prazos."
-              </p>
-            </div>
-            <div>
-              <p class="font-heading font-bold text-sm text-white">Marcelo Fontes</p>
-              <p class="text-xs text-slate-500">Reforma de Imóvel</p>
-            </div>
-          </div>
+        <div class="mt-10 text-center reveal">
+          <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso.%20Vou%20enviar%20fotos%20e%20medidas%20do%20ambiente%20para%20o%20or%C3%A7amento.%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20"
+             target="_blank" rel="noopener noreferrer" data-cta="como_funciona" data-channel="whatsapp"
+             class="inline-flex items-center justify-center gap-2 bg-wa hover:bg-wa-hover text-gl-base font-semibold px-7 py-4 rounded-xl transition-colors">
+            <svg class="w-5 h-5 fill-current shrink-0" aria-hidden="true"><use href="#i-wa"/></svg>
+            Enviar fotos e medidas
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="py-24 bg-[#141b24]/30 border-t border-slate-800/60">
-      <div class="max-w-3xl mx-auto px-6">
-        <div class="text-center mb-16 reveal-item delay-1">
-          <span class="text-xs font-semibold uppercase tracking-widest text-gl-accent block mb-2">Esclarecimentos</span>
-          <h2 class="font-heading text-3xl font-bold text-white tracking-tight">Perguntas Frequentes</h2>
+    <!-- DEPOIMENTOS -->
+    <!-- TODO(cliente): os textos abaixo foram ajustados para o português do Brasil ("estávamos atendendo", "procura"); confirmar com os clientes antes de publicar. -->
+    <section id="depoimentos" data-section="depoimentos" class="py-20 border-t border-slate-800/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl mb-12 reveal">
+          <p class="text-xs font-semibold uppercase tracking-widest text-gl-accent mb-2">Depoimentos</p>
+          <h2 class="font-heading text-3xl font-bold text-white tracking-tight">O que dizem nossos clientes</h2>
         </div>
 
-        <div class="space-y-4">
-          <details class="group bg-[#141b24] border border-slate-800 rounded-xl p-6 transition-all open:border-gl-accent/50 reveal-item delay-1" open>
-            <summary class="font-heading font-medium text-white cursor-pointer list-none flex justify-between items-center text-sm sm:text-base">
+        <div class="grid md:grid-cols-3 gap-5">
+          <figure class="bg-gl-card border border-slate-800 p-7 rounded-2xl flex flex-col reveal">
+            <p class="text-gl-accent text-sm mb-4" aria-label="5 de 5 estrelas">★★★★★</p>
+            <blockquote class="text-slate-200 leading-relaxed mb-6">“Fizeram o rebaixamento de gesso e as sancas com fita de LED no meu apartamento. O acabamento ficou perfeito, alinhamento impecável e sem bagunça.”</blockquote>
+            <figcaption class="mt-auto">
+              <span class="font-heading font-bold text-sm text-white block">Rodrigo Silva</span>
+              <span class="text-sm text-slate-400">Rebaixamento e sancas com LED · Apartamento, Rio de Janeiro</span>
+            </figcaption>
+          </figure>
+
+          <figure class="bg-gl-card border border-slate-800 p-7 rounded-2xl flex flex-col reveal">
+            <p class="text-gl-accent text-sm mb-4" aria-label="5 de 5 estrelas">★★★★★</p>
+            <blockquote class="text-slate-200 leading-relaxed mb-6">“Precisava dividir duas salas comerciais rapidamente. Fizeram o drywall acústico no fim de semana e na segunda-feira já estávamos atendendo clientes.”</blockquote>
+            <figcaption class="mt-auto">
+              <span class="font-heading font-bold text-sm text-white block">Dra. Amanda Castro</span>
+              <span class="text-sm text-slate-400">Divisórias em drywall acústico · Consultório odontológico</span>
+            </figcaption>
+          </figure>
+
+          <figure class="bg-gl-card border border-slate-800 p-7 rounded-2xl flex flex-col reveal">
+            <p class="text-gl-accent text-sm mb-4" aria-label="5 de 5 estrelas">★★★★★</p>
+            <blockquote class="text-slate-200 leading-relaxed mb-6">“Equipe extremamente pontual, honesta e técnica. Recomendo a GL Gesso para qualquer pessoa que procura qualidade e cumprimento de prazos.”</blockquote>
+            <figcaption class="mt-auto">
+              <span class="font-heading font-bold text-sm text-white block">Marcelo Fontes</span>
+              <span class="text-sm text-slate-400">Reforma de imóvel</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÚVIDAS -->
+    <section id="duvidas" data-section="duvidas" class="py-20 border-t border-slate-800/60 bg-gl-card/30">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 reveal">
+          <p class="text-xs font-semibold uppercase tracking-widest text-gl-accent mb-2">Dúvidas frequentes</p>
+          <h2 class="font-heading text-3xl font-bold text-white tracking-tight">Antes de pedir seu orçamento</h2>
+        </div>
+
+        <div class="space-y-3" id="faq-list">
+          <details class="group bg-gl-card border border-slate-800 rounded-xl open:border-gl-accent/50">
+            <summary class="flex justify-between items-center gap-4 cursor-pointer px-6 py-5 font-heading font-bold text-white">
+              O orçamento é cobrado?
+              <span class="text-gl-accent text-xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+            </summary>
+            <p class="px-6 pb-6 -mt-1 text-slate-400 leading-relaxed">Não. O orçamento é gratuito. Você pode começar enviando fotos e medidas pelo WhatsApp, e a visita técnica é combinada conforme a obra.</p>
+          </details>
+
+          <details class="group bg-gl-card border border-slate-800 rounded-xl open:border-gl-accent/50">
+            <summary class="flex justify-between items-center gap-4 cursor-pointer px-6 py-5 font-heading font-bold text-white">
+              Quais regiões vocês atendem?
+              <span class="text-gl-accent text-xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+            </summary>
+            <p class="px-6 pb-6 -mt-1 text-slate-400 leading-relaxed">Atendemos a cidade do Rio de Janeiro, Niterói, a Baixada Fluminense, o Sul Fluminense e a Região Serrana. Para outras regiões, consulte pelo WhatsApp.</p>
+          </details>
+
+          <details class="group bg-gl-card border border-slate-800 rounded-xl open:border-gl-accent/50">
+            <summary class="flex justify-between items-center gap-4 cursor-pointer px-6 py-5 font-heading font-bold text-white">
+              Vocês fazem serviços pequenos?
+              <span class="text-gl-accent text-xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
+            </summary>
+            <p class="px-6 pb-6 -mt-1 text-slate-400 leading-relaxed">Sim. Fazemos desde uma sanca ou um nicho em um único ambiente até a obra completa, residencial ou comercial.</p>
+          </details>
+
+          <details class="group bg-gl-card border border-slate-800 rounded-xl open:border-gl-accent/50">
+            <summary class="flex justify-between items-center gap-4 cursor-pointer px-6 py-5 font-heading font-bold text-white">
               A instalação de drywall e gesso faz muita sujeira?
-              <span class="text-gl-accent text-lg">+</span>
+              <span class="text-gl-accent text-xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm font-light leading-relaxed">
-              Não. O sistema a seco reduz drasticamente a poeira comparado à alvenaria tradicional. Protegemos os pisos e móveis adjacentes e entregamos o espaço limpo e pronto para pintura.
-            </p>
+            <p class="px-6 pb-6 -mt-1 text-slate-400 leading-relaxed">Não. O sistema a seco gera muito menos poeira que a alvenaria tradicional. Protegemos pisos e móveis e entregamos o espaço limpo e pronto para pintura.</p>
           </details>
 
-          <details class="group bg-[#141b24] border border-slate-800 rounded-xl p-6 transition-all open:border-gl-accent/50 reveal-item delay-2">
-            <summary class="font-heading font-medium text-white cursor-pointer list-none flex justify-between items-center text-sm sm:text-base">
-              O drywall suporta o peso de televisores e armários pesados?
-              <span class="text-gl-accent text-lg">+</span>
+          <details class="group bg-gl-card border border-slate-800 rounded-xl open:border-gl-accent/50">
+            <summary class="flex justify-between items-center gap-4 cursor-pointer px-6 py-5 font-heading font-bold text-white">
+              O drywall suporta o peso de TVs e armários?
+              <span class="text-gl-accent text-xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm font-light leading-relaxed">
-              Sim. Instalamos perfis de reforço estrutural em madeira tratada ou aço internamente na parede durante a montagem, permitindo a fixação segura de TVs, bancadas e armários.
-            </p>
+            <p class="px-6 pb-6 -mt-1 text-slate-400 leading-relaxed">Sim. Instalamos reforços internos em madeira tratada ou aço durante a montagem, o que permite fixar com segurança TVs, bancadas e armários.</p>
           </details>
 
-          <details class="group bg-[#141b24] border border-slate-800 rounded-xl p-6 transition-all open:border-gl-accent/50 reveal-item delay-3">
-            <summary class="font-heading font-medium text-white cursor-pointer list-none flex justify-between items-center text-sm sm:text-base">
-              Quanto tempo demora em média para rebaixar o teto de uma sala?
-              <span class="text-gl-accent text-lg">+</span>
+          <details class="group bg-gl-card border border-slate-800 rounded-xl open:border-gl-accent/50">
+            <summary class="flex justify-between items-center gap-4 cursor-pointer px-6 py-5 font-heading font-bold text-white">
+              Quanto tempo leva para rebaixar o teto de uma sala?
+              <span class="text-gl-accent text-xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm font-light leading-relaxed">
-              Um ambiente residencial padrão (cerca de 20m² a 30m²) com forro liso ou sanca iluminada costuma ser estruturado e plaqueado em apenas 1 a 2 dias úteis.
-            </p>
+            <p class="px-6 pb-6 -mt-1 text-slate-400 leading-relaxed">Um ambiente residencial de 20 a 30 m² com forro liso ou sanca iluminada costuma ficar estruturado e plaqueado em 1 a 2 dias úteis.</p>
           </details>
 
-          <details class="group bg-[#141b24] border border-slate-800 rounded-xl p-6 transition-all open:border-gl-accent/50 reveal-item delay-1">
-            <summary class="font-heading font-medium text-white cursor-pointer list-none flex justify-between items-center text-sm sm:text-base">
-              Vocês realizam a parte de fiação e iluminação das sancas?
-              <span class="text-gl-accent text-lg">+</span>
+          <details class="group bg-gl-card border border-slate-800 rounded-xl open:border-gl-accent/50">
+            <summary class="flex justify-between items-center gap-4 cursor-pointer px-6 py-5 font-heading font-bold text-white">
+              Vocês fazem a parte de fiação e iluminação das sancas?
+              <span class="text-gl-accent text-xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm font-light leading-relaxed">
-              Executamos todo o projeto de gesso com furações para spots, rasgos de luz, cortineiros e passagens estruturadas para fitas LED, deixando tudo pronto para a ligação final.
-            </p>
+            <p class="px-6 pb-6 -mt-1 text-slate-400 leading-relaxed">Executamos todo o gesso com furos para spots, rasgos de luz, cortineiros e passagens para fitas de LED, deixando tudo pronto para a ligação elétrica final.</p>
           </details>
 
-          <details class="group bg-[#141b24] border border-slate-800 rounded-xl p-6 transition-all open:border-gl-accent/50 reveal-item delay-2">
-            <summary class="font-heading font-medium text-white cursor-pointer list-none flex justify-between items-center text-sm sm:text-base">
-              O serviço já inclui o tratamento de juntas para pintura?
-              <span class="text-gl-accent text-lg">+</span>
+          <details class="group bg-gl-card border border-slate-800 rounded-xl open:border-gl-accent/50">
+            <summary class="flex justify-between items-center gap-4 cursor-pointer px-6 py-5 font-heading font-bold text-white">
+              O serviço inclui o tratamento de juntas para pintura?
+              <span class="text-gl-accent text-xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm font-light leading-relaxed">
-              Sim. Realizamos o tratamento completo de juntas com fitas microperfuradas e massa específica, além do lixamento, deixando as placas perfeitamente lisas para receber a tinta.
-            </p>
+            <p class="px-6 pb-6 -mt-1 text-slate-400 leading-relaxed">Sim. Fazemos o tratamento completo das juntas com fita microperfurada e massa própria, além do lixamento, e as placas ficam lisas para receber a tinta.</p>
           </details>
 
-          <details class="group bg-[#141b24] border border-slate-800 rounded-xl p-6 transition-all open:border-gl-accent/50 reveal-item delay-3">
-            <summary class="font-heading font-medium text-white cursor-pointer list-none flex justify-between items-center text-sm sm:text-base">
-              Quais são as formas de pagamento aceitas?
-              <span class="text-gl-accent text-lg">+</span>
+          <details class="group bg-gl-card border border-slate-800 rounded-xl open:border-gl-accent/50">
+            <summary class="flex justify-between items-center gap-4 cursor-pointer px-6 py-5 font-heading font-bold text-white">
+              Quais são as formas de pagamento?
+              <span class="text-gl-accent text-xl transition-transform group-open:rotate-45" aria-hidden="true">+</span>
             </summary>
-            <p class="mt-4 text-slate-400 text-sm font-light leading-relaxed">
-              Aceitamos Pix, transferência bancária e parcelamento no cartão de crédito em até 12x. Em obras comerciais maiores, trabalhamos com cronograma vinculado a etapas.
-            </p>
+            <p class="px-6 pb-6 -mt-1 text-slate-400 leading-relaxed">Pix, transferência bancária e cartão de crédito em até 12x. Em obras comerciais maiores, o pagamento segue um cronograma por etapas.</p>
           </details>
         </div>
+
+        <p class="mt-8 text-center">
+          <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20tenho%20uma%20d%C3%BAvida%3A%20"
+             target="_blank" rel="noopener noreferrer" data-cta="faq" data-channel="whatsapp"
+             class="inline-flex items-center gap-2 font-semibold text-gl-accent hover:underline py-2">
+            <svg class="w-4 h-4 fill-current" aria-hidden="true"><use href="#i-wa"/></svg>
+            Outra dúvida? Pergunte no WhatsApp
+          </a>
+        </p>
       </div>
     </section>
 
     <!-- CTA FINAL -->
-    <section id="contato" class="py-24 text-center border-t border-slate-800/80">
-      <div class="max-w-3xl mx-auto px-6 reveal-item delay-1">
-        <span class="text-xs font-semibold uppercase tracking-widest text-gl-accent block mb-3">Atendimento Direto</span>
-        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-6">Pronto para iniciar o seu projeto?</h2>
-        <p class="text-slate-400 text-base mb-8 font-light">Envie as suas referências ou medidas e receba uma avaliação técnica personalizada.</p>
-        
-        <a href="https://wa.me/5524981162757" target="_blank" rel="noopener noreferrer" 
-           class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-sm px-8 py-4 rounded-full shadow-xl transition-transform hover:scale-105">
-          <svg class="w-5 h-5 fill-white shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          Conversar pelo WhatsApp
-        </a>
+    <section id="contato" data-section="contato" class="py-20 border-t border-slate-800/80">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center reveal">
+        <p class="text-xs font-semibold uppercase tracking-widest text-gl-accent mb-3">Orçamento gratuito</p>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-5">Peça o orçamento da sua obra</h2>
+        <p class="text-slate-300 mb-8 leading-relaxed">Mande fotos do ambiente, a medida aproximada e o bairro. Com isso já conseguimos orientar e, se for preciso, combinar a visita técnica.</p>
+
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento.%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+             target="_blank" rel="noopener noreferrer" data-cta="final" data-channel="whatsapp"
+             class="inline-flex items-center justify-center gap-3 bg-wa hover:bg-wa-hover text-gl-base font-semibold px-8 py-4 rounded-xl transition-colors">
+            <svg class="w-5 h-5 fill-current shrink-0" aria-hidden="true"><use href="#i-wa"/></svg>
+            Pedir orçamento grátis
+          </a>
+          <a href="tel:+5524981162757" data-cta="final" data-channel="telefone"
+             class="inline-flex items-center justify-center gap-3 border border-slate-600 hover:border-slate-400 text-slate-200 font-medium px-8 py-4 rounded-xl transition-colors">
+            <svg class="w-5 h-5 fill-current shrink-0" aria-hidden="true"><use href="#i-phone"/></svg>
+            Ligar: (24) 98116-2757
+          </a>
+        </div>
+        <p class="mt-6 text-sm text-slate-400">Atendemos Rio de Janeiro, Niterói, Baixada Fluminense, Sul Fluminense e Região Serrana. Outras regiões sob consulta.</p>
       </div>
     </section>
   </main>
 
   <!-- RODAPÉ -->
-  <footer class="bg-black text-slate-400 py-16 border-t border-slate-900">
-    <div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+  <footer class="bg-black text-slate-300 pt-16 pb-24 sm:pb-12 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
       <div>
-        <span class="font-heading font-bold text-white text-base block mb-3">GL Gesso Construções</span>
-        <p class="text-xs text-slate-500 leading-relaxed">Especialistas em acabamentos, gesso e drywall de alto padrão no Rio de Janeiro.</p>
+        <p class="font-heading font-bold text-white text-base mb-3">GL Gesso Construções</p>
+        <p class="text-sm text-slate-400 leading-relaxed">Forros, sancas, drywall e acabamentos em gesso para residências e espaços comerciais.</p>
       </div>
       <div>
-        <span class="font-heading font-bold text-white text-xs uppercase tracking-wider block mb-3">Navegação</span>
-        <ul class="space-y-2 text-xs">
-          <li><a href="#inicio" class="hover:text-gl-accent">Início</a></li>
-          <li><a href="#solucoes" class="hover:text-gl-accent">Soluções</a></li>
-          <li><a href="#projetos" class="hover:text-gl-accent">Portfólio</a></li>
-          <li><a href="#relatos" class="hover:text-gl-accent">Relatos</a></li>
-          <li><a href="#faq" class="hover:text-gl-accent">FAQ</a></li>
+        <p class="font-heading font-bold text-white text-xs uppercase tracking-wider mb-3">Navegação</p>
+        <ul class="text-sm text-slate-400">
+          <li><a href="#servicos" class="inline-block py-2 hover:text-gl-accent">Serviços</a></li>
+          <li><a href="#obras" class="inline-block py-2 hover:text-gl-accent">Obras</a></li>
+          <li><a href="#como-funciona" class="inline-block py-2 hover:text-gl-accent">Como funciona</a></li>
+          <li><a href="#depoimentos" class="inline-block py-2 hover:text-gl-accent">Depoimentos</a></li>
+          <li><a href="#duvidas" class="inline-block py-2 hover:text-gl-accent">Dúvidas</a></li>
         </ul>
       </div>
       <div>
-        <span class="font-heading font-bold text-white text-xs uppercase tracking-wider block mb-3">Localização</span>
-        <p class="text-xs text-slate-500 mb-3">Rua João Ventura, 11 - Catumbi, Rio de Janeiro - RJ</p>
-        <div class="w-full h-24 rounded-lg overflow-hidden border border-slate-800">
-          <iframe width="100%" height="100%" style="border:0;" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-43.195%2C-22.915%2C-43.185%2C-22.905&amp;layer=mapnik&amp;marker=-22.910%2C-43.190"></iframe>
+        <p class="font-heading font-bold text-white text-xs uppercase tracking-wider mb-3">Endereço</p>
+        <p class="text-sm text-slate-400 mb-3">Rua João Ventura, 11 - Catumbi, Rio de Janeiro - RJ</p>
+        <div class="w-full h-28 rounded-lg overflow-hidden border border-slate-800">
+          <iframe title="Mapa: Rua João Ventura, 11 - Catumbi, Rio de Janeiro" width="100%" height="100%" style="border:0;" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-43.2013%2C-22.9192%2C-43.1913%2C-22.9112&amp;layer=mapnik&amp;marker=-22.9152%2C-43.1963"></iframe>
         </div>
       </div>
       <div>
-        <span class="font-heading font-bold text-white text-xs uppercase tracking-wider block mb-3">Contato</span>
-        <p class="text-xs text-slate-500 mb-1">WhatsApp: (24) 98116-2757</p>
-        <p class="text-xs text-slate-500 mb-3">E-mail: ysousalima00@gmail.com</p>
-        <p class="text-xs text-gl-accent font-medium">Instagram: @glgessoconstrucoes</p>
+        <p class="font-heading font-bold text-white text-xs uppercase tracking-wider mb-3">Contato</p>
+        <ul class="text-sm text-slate-400">
+          <li>
+            <a href="https://wa.me/5524981162757?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GL%20Gesso%20e%20quero%20um%20or%C3%A7amento.%0AServi%C3%A7o%3A%20%0ABairro%2Fcidade%3A%20%0AMedida%20aproximada%20(m%C2%B2)%3A%20%0APara%20quando%3A%20"
+               target="_blank" rel="noopener noreferrer" data-cta="rodape" data-channel="whatsapp" class="inline-flex items-center gap-2 py-2 hover:text-gl-accent">
+              <svg class="w-4 h-4 fill-current" aria-hidden="true"><use href="#i-wa"/></svg> WhatsApp: (24) 98116-2757
+            </a>
+          </li>
+          <li>
+            <a href="tel:+5524981162757" data-cta="rodape" data-channel="telefone" class="inline-flex items-center gap-2 py-2 hover:text-gl-accent">
+              <svg class="w-4 h-4 fill-current" aria-hidden="true"><use href="#i-phone"/></svg> Ligar: (24) 98116-2757
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/glgessoconstrucoes" target="_blank" rel="noopener noreferrer" data-cta="rodape" data-channel="instagram" class="inline-flex items-center gap-2 py-2 text-gl-accent hover:underline">
+              <svg class="w-4 h-4 fill-current" aria-hidden="true"><use href="#i-ig"/></svg> @glgessoconstrucoes
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-6 pt-6 border-t border-slate-900 text-center text-[11px] text-slate-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 border-t border-slate-900 text-center text-sm text-slate-400">
+      <!-- TODO(cliente): incluir razão social e CNPJ, por exemplo "© 2026 RAZÃO SOCIAL LTDA · CNPJ 00.000.000/0000-00". -->
       © 2026 GL Gesso Construções. Todos os direitos reservados.
     </div>
   </footer>
 
-  <!-- SCRIPT -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-revealed");
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { rootMargin: "0px 0px -30px 0px", threshold: 0.1 });
-
-      document.querySelectorAll(".reveal-item").forEach(el => observer.observe(el));
-
-      const slides = document.querySelectorAll(".hero-slide");
-      const dots = document.querySelectorAll("#carousel-dots button");
-      let currentSlide = 0;
-      
-      function showSlide(index) {
-        slides.forEach(s => s.classList.remove("active"));
-        dots.forEach(d => { d.classList.remove("bg-white"); d.classList.add("bg-white/40"); });
-        currentSlide = (index + slides.length) % slides.length;
-        slides[currentSlide].classList.add("active");
-        dots[currentSlide].classList.remove("bg-white/40");
-        dots[currentSlide].classList.add("bg-white");
-      }
-
-      setInterval(() => showSlide(currentSlide + 1), 4500);
-
-      dots.forEach((dot, idx) => {
-        dot.addEventListener("click", () => showSlide(idx));
-      });
-    });
-  </script>
-
+  <script src="/assets/js/web-vitals.js" defer></script>
+  <script src="/assets/js/site.js?v=20261026" defer></script>
 </body>
 </html>

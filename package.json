@@ -1,0 +1,19 @@
+{
+  "name": "glgesso-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Landing page GL Gesso Construções (estática, publicada na Vercel sem build).",
+  "scripts": {
+    "build:vendor": "node scripts/copy-vendor.mjs",
+    "build:images": "node scripts/optimize-images.mjs",
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/site.css --minify",
+    "build": "npm run build:vendor && npm run build:images && npm run build:css"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "5.1.0",
+    "@fontsource/montserrat": "5.1.0",
+    "sharp": "0.33.5",
+    "tailwindcss": "3.4.17",
+    "web-vitals": "4.2.4"
+  }
+}

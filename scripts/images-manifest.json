@@ -1,0 +1,182 @@
+{
+  "sancas-perfil-led": {
+    "original": [
+      736,
+      1104
+    ],
+    "variants": [
+      {
+        "name": "sancas-perfil-led-480.webp",
+        "width": 480,
+        "height": 720,
+        "kb": 17
+      },
+      {
+        "name": "sancas-perfil-led-960.webp",
+        "width": 736,
+        "height": 1104,
+        "kb": 33
+      }
+    ]
+  },
+  "forro-rebaixado-luz": {
+    "original": [
+      736,
+      1104
+    ],
+    "variants": [
+      {
+        "name": "forro-rebaixado-luz-480.webp",
+        "width": 480,
+        "height": 720,
+        "kb": 17
+      },
+      {
+        "name": "forro-rebaixado-luz-960.webp",
+        "width": 736,
+        "height": 1104,
+        "kb": 40
+      }
+    ]
+  },
+  "paredes-3d-sala": {
+    "original": [
+      736,
+      1307
+    ],
+    "variants": [
+      {
+        "name": "paredes-3d-sala-480.webp",
+        "width": 480,
+        "height": 852,
+        "kb": 24
+      },
+      {
+        "name": "paredes-3d-sala-960.webp",
+        "width": 736,
+        "height": 1307,
+        "kb": 39
+      }
+    ]
+  },
+  "paredes-3d": {
+    "original": [
+      542,
+      728
+    ],
+    "variants": [
+      {
+        "name": "paredes-3d-480.webp",
+        "width": 480,
+        "height": 645,
+        "kb": 18
+      },
+      {
+        "name": "paredes-3d-960.webp",
+        "width": 542,
+        "height": 728,
+        "kb": 21
+      }
+    ]
+  },
+  "sancas-iluminacao-led": {
+    "original": [
+      478,
+      470
+    ],
+    "variants": [
+      {
+        "name": "sancas-iluminacao-led-480.webp",
+        "width": 478,
+        "height": 470,
+        "kb": 15
+      },
+      {
+        "name": "sancas-iluminacao-led-960.webp",
+        "width": 478,
+        "height": 470,
+        "kb": 15
+      }
+    ]
+  },
+  "forro-rebaixado": {
+    "original": [
+      601,
+      505
+    ],
+    "variants": [
+      {
+        "name": "forro-rebaixado-480.webp",
+        "width": 480,
+        "height": 403,
+        "kb": 6
+      },
+      {
+        "name": "forro-rebaixado-960.webp",
+        "width": 601,
+        "height": 505,
+        "kb": 8
+      }
+    ]
+  },
+  "isolamento-termoacustico": {
+    "original": [
+      544,
+      732
+    ],
+    "variants": [
+      {
+        "name": "isolamento-termoacustico-480.webp",
+        "width": 480,
+        "height": 646,
+        "kb": 22
+      },
+      {
+        "name": "isolamento-termoacustico-960.webp",
+        "width": 544,
+        "height": 732,
+        "kb": 28
+      }
+    ]
+  },
+  "nichos-paineis": {
+    "original": [
+      424,
+      754
+    ],
+    "variants": [
+      {
+        "name": "nichos-paineis-480.webp",
+        "width": 424,
+        "height": 754,
+        "kb": 8
+      },
+      {
+        "name": "nichos-paineis-960.webp",
+        "width": 424,
+        "height": 754,
+        "kb": 8
+      }
+    ]
+  },
+  "ambientes-comerciais": {
+    "original": [
+      903,
+      675
+    ],
+    "variants": [
+      {
+        "name": "ambientes-comerciais-480.webp",
+        "width": 480,
+        "height": 359,
+        "kb": 14
+      },
+      {
+        "name": "ambientes-comerciais-960.webp",
+        "width": 903,
+        "height": 675,
+        "kb": 33
+      }
+    ]
+  }
+}
