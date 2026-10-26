@@ -15,7 +15,21 @@
 - **Valor do Orçamento**, **Valor Fechado** e **Observação** nunca são preenchidos pelo script. O Status só é preenchido quando o lead chega.
 - O painel "Visão Geral" conta apenas a aba "Gestão de Leads". Para incluir os leads do site, as fórmulas dele precisam somar as duas abas.
 
-## Como publicar
+## Implantação atual
+
+- Projeto Apps Script **GL Gesso - Leads do site**, vinculado à planilha: `1auFDSrbuVT-xtctADNwF9mT5c9YWMdRNSsc9sIoVnf1_2I8Xcc4h4ffq` (fica em `.clasp.json`).
+- Implantação web "Quiz do site v1": `AKfycbztOiPXCjN_OYjf2RIfzlwgYwjJmex4FqaD__qZnhTnr4Tud0qFgJRbzERgxMEH4qMn`. É a URL `/exec` configurada em `assets/js/quiz.js`.
+
+Para atualizar o código **mantendo a mesma URL**, rode estes comandos nesta pasta:
+
+```bash
+npx @google/clasp@2.4.2 push -f
+npx @google/clasp@2.4.2 deploy -i AKfycbztOiPXCjN_OYjf2RIfzlwgYwjJmex4FqaD__qZnhTnr4Tud0qFgJRbzERgxMEH4qMn -d "descrição da versão"
+```
+
+Antes, é preciso ter feito `clasp login` com a conta dona do script e ativado a "API do Google Apps Script" em script.google.com/home/usersettings.
+
+## Como publicar (do zero, pelo editor)
 
 1. Abra a planilha com uma conta que tenha permissão de edição.
 2. Vá em **Extensões → Apps Script**.

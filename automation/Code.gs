@@ -22,6 +22,13 @@ const HEADERS = [
   "E-mail", "Bairro", "Tamanho (m²)", "Prazo", "Origem", "ID",
 ];
 
+// Execute uma vez no editor (Executar → autorizar) para conceder acesso à planilha e ao envio
+// de e-mails. Não grava nada nem envia mensagens.
+function autorizar() {
+  const sheetName = SpreadsheetApp.openById(CONFIG.SPREADSHEET_ID).getName();
+  console.log("Planilha: " + sheetName + " · cota de e-mails restante hoje: " + MailApp.getRemainingDailyQuota());
+}
+
 function doGet() {
   return jsonResponse_({ ok: true, version: SCRIPT_VERSION, sheet: CONFIG.SHEET_NAME, message: "Endpoint ativo. Envie leads via POST." });
 }

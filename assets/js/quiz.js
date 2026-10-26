@@ -4,7 +4,7 @@
   "use strict";
 
   // URL /exec do Apps Script (automation/Code.gs). Vazia: o quiz abre o WhatsApp, mas não grava o lead.
-  var LEAD_ENDPOINT = "";
+  var LEAD_ENDPOINT = "https://script.google.com/macros/s/AKfycbztOiPXCjN_OYjf2RIfzlwgYwjJmex4FqaD__qZnhTnr4Tud0qFgJRbzERgxMEH4qMn/exec";
   var PHONE = "5524981162757";
 
   var root = document.getElementById("quiz");
